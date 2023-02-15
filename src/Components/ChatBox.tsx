@@ -10,7 +10,7 @@ interface IProps {
 
 const ChatBox: React.FC<IProps> = ({ title, id }) => {
     return (
-        <Link to={`${id}`}>
+        <Link to={`/chat/${id}`}>
             <button className='left-bar-button'>
                 <img src={Message} className='w-[0.90rem]' />
                 <span className='shadow-'>{title}</span>
