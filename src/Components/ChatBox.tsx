@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Message from '../assets/message.png';
+import { ChatBubbleOvalLeftIcon } from '@heroicons/react/24/solid'
 
 interface IProps {
     title: string,
@@ -10,11 +11,9 @@ interface IProps {
 
 const ChatBox: React.FC<IProps> = ({ title, id }) => {
     return (
-        <Link to={`/chat/${id}`}>
-            <button className='left-bar-button'>
-                <img src={Message} className='w-[0.90rem]' />
-                <span className='shadow-'>{title}</span>
-            </button>
+        <Link to={`/chat/${id}`} className='left-bar-button'>
+            <ChatBubbleOvalLeftIcon className='w-4' />
+            <span className='left-bar-title'>{title}</span>
         </Link>
     )
 }
