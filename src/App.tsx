@@ -5,6 +5,7 @@ import { Login, Homepage } from './Pages'
 import { useSelector } from 'react-redux';
 import { getLoggedInState } from './store/selectors';
 import { createBrowserRouter, Navigate, createRoutesFromElements, Route, Routes, RouterProvider } from 'react-router-dom';
+import Chat from './Components/Chat';
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
   const router = createBrowserRouter(createRoutesFromElements
     (
       <>
-        <Route path='/' element={isLoggedIn ? <Homepage/> : <Login />} />
-        <Route path='/home' element={!isLoggedIn ? <Login/> : <Homepage />} />
+        <Route path='/' element={isLoggedIn ? <Navigate to={'/chat'} /> : <Login />} />
+        <Route path='/chat' element={!isLoggedIn ? <Navigate to={'/'} /> : <Homepage />}/>
+        <Route path='/chat/:id' element={<Chat/>}/>
       </>
     )
   )

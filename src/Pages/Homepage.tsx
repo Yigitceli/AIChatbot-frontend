@@ -1,4 +1,5 @@
 import React from 'react'
+import Container from '../Components/Container'
 
 function Homepage() {
   return (
@@ -6,4 +7,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Container(Homepage)
