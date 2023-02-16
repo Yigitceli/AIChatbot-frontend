@@ -18,7 +18,7 @@ const Homepage: React.FC<IProps> = ({ setUserChat }) => {
 
   return (
     <div className='w-full h-full flex flex-col justify-center'>
-      <div className='w-full h-1/3 flex flex-col items-center justify-evenly text-white'>
+      <div className='w-full h-1/2 flex flex-col items-center justify-evenly text-white'>
         <h1 className='text-white text-3xl font-semibold'>ChatGPT</h1>
         <div className='flex gap-5 flex-wrap md:flex-nowrap w-full md:w-auto'>
           <div className='homepage-col gap-5'>
