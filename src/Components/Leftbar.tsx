@@ -6,7 +6,7 @@ import { PlusIcon, TrashIcon, SunIcon, ArrowLeftOnRectangleIcon } from '@heroico
 
 function Leftbar() {
     return (
-        <div className='min-w-[18rem] max-w-[18rem] bg-[#202123] flex flex-col text-white p-3 text-sm gap-3 overflow-hidden'>
+        <div className='min-w-[18rem] max-w-[18rem] bg-[#202123] lg:flex flex-col text-white p-3 text-sm gap-3 overflow-hidden hidden '>
             <Link className='border-slate-500 border-[1px] p-3 flex items-center rounded-md gap-[0.7rem] hover:bg-gray-800 transition-all ease-in-out' to={'/'}><PlusIcon className='w-4' />New Chat</Link>
             <div className='w-full h-4/5'>
                 <ChatBox title={'asdasfdaFAFASFASFASFASFASFASFASFASFASF'} id={1} />

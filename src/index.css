@@ -21,11 +21,11 @@
   }
 
   .homepage-section {
-    @apply text-sm w-60 p-3 bg-[#3e3f4b] flex items-end rounded-lg text-center
+    @apply text-sm p-3 bg-[#3e3f4b] flex items-end rounded-lg text-center md:max-w-[15rem] min-w-[8rem] w-full md:w-auto
   }
 
   .homepage-col {
-    @apply flex flex-col items-center gap-4
+    @apply flex flex-col items-center justify-between w-full md:w-auto
   }
 }
 
