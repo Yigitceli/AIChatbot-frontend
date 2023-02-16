@@ -28,15 +28,15 @@ const Homepage: React.FC<IProps> = ({ setUserChat }) => {
             </div>
 
             <button className='homepage-section hover:bg-[#202123]' onClick={e => clickHandler(first)}>
-              <span className='w-full'>{first}&#8594;</span>
+              <span className='w-full'>{first}   &#8594;</span>
             </button>
 
             <button className='homepage-section hover:bg-[#202123]' onClick={e => clickHandler(second)}>
-              <span className='w-full'>{second}&#8594;</span>
+              <span className='w-full'>{second}  &#8594;</span>
             </button>
 
             <button className='homepage-section hover:bg-[#202123]' onClick={e => clickHandler(third)}>
-              <span className='w-full'>{third}&#8594;</span>
+              <span className='w-full'>{third}   &#8594;</span>
             </button>
 
           </div>
@@ -47,15 +47,15 @@ const Homepage: React.FC<IProps> = ({ setUserChat }) => {
             </div>
 
             <div className='homepage-section'>
-              <span className='w-full'>"Explain quantum computing in simple terms"&#8594;</span>
+              <span className='w-full'>"Explain quantum computing in simple terms"</span>
             </div>
 
             <div className='homepage-section'>
-              <span className='w-full'>"Got any creative ideas for a 10 year old’s birthday?"&#8594;</span>
+              <span className='w-full'>"Got any creative ideas for a 10 year old’s birthday?"</span>
             </div>
 
             <div className='homepage-section'>
-              <span className='w-full'>"How do I make an HTTP request in Javascript?"&#8594;</span>
+              <span className='w-full'>"How do I make an HTTP request in Javascript?"</span>
             </div>
 
           </div>
@@ -66,15 +66,15 @@ const Homepage: React.FC<IProps> = ({ setUserChat }) => {
             </div>
 
             <div className='homepage-section'>
-              <span className='w-full'>"Explain quantum computing in simple terms"&#8594;</span>
+              <span className='w-full'>"Explain quantum computing in simple terms"</span>
             </div>
 
             <div className='homepage-section'>
-              <span className='w-full'>"Got any creative ideas for a 10 year old’s birthday?"&#8594;</span>
+              <span className='w-full'>"Got any creative ideas for a 10 year old’s birthday?"</span>
             </div>
 
             <div className='homepage-section'>
-              <span className='w-full'>"How do I make an HTTP request in Javascript?"&#8594;</span>
+              <span className='w-full'>"How do I make an HTTP request in Javascript?"</span>
             </div>
 
           </div>
