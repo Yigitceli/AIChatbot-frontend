@@ -11,6 +11,22 @@
   .left-bar-title {
     @apply w-52 overflow-hidden
   }
+
+  .homepage-title {
+    @apply flex flex-col text-white items-center text-center gap-1
+  }
+
+  .homepage-icon {
+    @apply w-[1.5rem]
+  }
+
+  .homepage-section {
+    @apply text-sm w-60 p-3 bg-[#3e3f4b] flex items-end rounded-lg text-center
+  }
+
+  .homepage-col {
+    @apply flex flex-col items-center gap-4
+  }
 }
 
 * {
