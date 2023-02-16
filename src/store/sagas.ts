@@ -2,7 +2,6 @@ import { call, CallEffect, ChannelPutEffect, put, PutEffect, takeEvery, takeLate
 import { GoogleAuthProvider, signInWithPopup, UserCredential } from 'firebase/auth';
 import { auth, provider } from '../firebase/index';
 import { AnyAction } from 'redux';
-import { setIsLoggingIn } from './userSlice';
 
 
 
@@ -12,7 +11,7 @@ function* login(): Generator<
    void
 > {
    try {
-      yield put({type: setIsLoggingIn(true).type, payload: setIsLoggingIn(true).payload})
+      yield put({type: "User/setIsLoggingIn", payload: true})
       const result = yield call(signInWithPopup, auth, provider)
       const credential = GoogleAuthProvider.credentialFromResult(result as UserCredential);
       yield put({ type: "User/loginResolved" });
@@ -24,5 +23,5 @@ function* login(): Generator<
 // Starts fetchUser on each dispatched USER_FETCH_REQUESTED action
 // Allows concurrent fetches of user
 export function* mySaga() {
-   yield takeEvery("User/login_requested", login);
+   yield takeEvery("User/loginRequested", login);
 }

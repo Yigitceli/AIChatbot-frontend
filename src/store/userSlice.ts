@@ -28,7 +28,7 @@ export const UserSlice = createSlice({
       state.isLoggingIn = false;
     },
     loginRejected(state, action: PayloadAction<any>) {
-
+      state.isLoggingIn = false;
     }
   },
 })

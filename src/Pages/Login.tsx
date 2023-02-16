@@ -13,7 +13,7 @@ function Login() {
 
 
   const clickHandler = async (e: any) => {
-    dispatch({ type: 'User/login_requested' })
+    dispatch({ type: 'User/loginRequested' })
   }
 
   return (
